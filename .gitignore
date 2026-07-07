@@ -1,0 +1,6 @@
+# Logisim temp/backup files
+*.bak
+*.lock
+# OS generated files
+.DS_Store
+Thumbs.db
