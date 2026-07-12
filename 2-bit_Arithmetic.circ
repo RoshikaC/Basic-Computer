@@ -56,6 +56,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(240,140)" to="(240,270)"/>
     <wire from="(230,150)" to="(230,280)"/>
+    <wire from="(400,270)" to="(460,270)"/>
     <wire from="(210,170)" to="(210,240)"/>
     <wire from="(110,130)" to="(230,130)"/>
     <wire from="(110,170)" to="(110,180)"/>
@@ -85,10 +86,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(240,270)" to="(370,270)"/>
     <wire from="(250,70)" to="(250,130)"/>
     <wire from="(110,100)" to="(240,100)"/>
+    <comp lib="0" loc="(60,250)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B i"/>
+    </comp>
+    <comp lib="7" loc="(290,140)" name="1-bit_Arithmetic"/>
+    <comp lib="7" loc="(400,270)" name="1-bit_Arithmetic"/>
     <comp lib="0" loc="(420,320)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="C i+2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(110,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="0" loc="(80,250)" name="Splitter">
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="0" loc="(110,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(460,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="D i+1"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(420,140)" name="Pin">
@@ -97,35 +122,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="D i"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(400,270)" name="1-bit_Arithmetic"/>
-    <comp lib="0" loc="(80,250)" name="Splitter">
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="0" loc="(110,130)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S1"/>
-    </comp>
     <comp lib="0" loc="(110,70)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Cin"/>
     </comp>
-    <comp lib="0" loc="(110,100)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S0"/>
+    <comp lib="0" loc="(90,170)" name="Splitter">
+      <a name="appear" val="center"/>
     </comp>
-    <comp lib="0" loc="(60,250)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B i"/>
-    </comp>
-    <comp lib="7" loc="(290,140)" name="1-bit_Arithmetic"/>
     <comp lib="0" loc="(60,170)" name="Pin">
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A i"/>
-    </comp>
-    <comp lib="0" loc="(90,170)" name="Splitter">
-      <a name="appear" val="center"/>
     </comp>
   </circuit>
 </project>
