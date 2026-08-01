@@ -63,7 +63,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(210,370)" to="(400,370)"/>
-    <wire from="(620,100)" to="(620,110)"/>
     <wire from="(630,30)" to="(630,40)"/>
     <wire from="(930,250)" to="(930,260)"/>
     <wire from="(950,390)" to="(950,400)"/>
@@ -212,6 +211,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(760,100)" to="(760,180)"/>
     <wire from="(100,360)" to="(100,450)"/>
     <wire from="(80,350)" to="(180,350)"/>
+    <wire from="(620,90)" to="(620,110)"/>
     <wire from="(700,450)" to="(700,470)"/>
     <wire from="(360,380)" to="(360,470)"/>
     <wire from="(210,400)" to="(310,400)"/>
@@ -350,12 +350,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="PC_LD"/>
     </comp>
+    <comp lib="0" loc="(620,90)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
     <comp lib="0" loc="(130,130)" name="Clock">
       <a name="label" val="MASTER CLK"/>
-    </comp>
-    <comp lib="0" loc="(630,30)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="TR_INC"/>
     </comp>
     <comp lib="0" loc="(790,70)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -377,6 +376,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="RD"/>
     </comp>
+    <comp lib="0" loc="(630,30)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
     <comp lib="0" loc="(640,350)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="DR_LD"/>
@@ -387,10 +390,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(380,200)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="AC_INC"/>
-    </comp>
-    <comp lib="0" loc="(620,100)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="IR_INC"/>
     </comp>
     <comp lib="0" loc="(670,500)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -425,6 +424,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="A_SELECT"/>
     </comp>
+    <comp lib="0" loc="(610,150)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
     <comp lib="0" loc="(830,110)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
@@ -452,17 +454,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="label" val="DR_INC"/>
     </comp>
-    <comp lib="0" loc="(610,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A i-1"/>
-    </comp>
     <comp lib="0" loc="(130,150)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="S"/>
-    </comp>
-    <comp lib="0" loc="(620,300)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A i+1"/>
     </comp>
     <comp lib="0" loc="(960,400)" name="Tunnel">
       <a name="label" val="FGI"/>
@@ -510,5 +504,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="AR_LD"/>
     </comp>
     <comp lib="4" loc="(190,130)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(620,300)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
   </circuit>
 </project>
