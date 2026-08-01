@@ -70,22 +70,53 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(200,120)" to="(240,120)"/>
     <wire from="(270,120)" to="(310,120)"/>
     <wire from="(240,90)" to="(240,120)"/>
+    <wire from="(390,100)" to="(430,100)"/>
     <wire from="(110,160)" to="(110,320)"/>
     <wire from="(400,120)" to="(430,120)"/>
     <wire from="(470,100)" to="(500,100)"/>
+    <wire from="(360,100)" to="(390,100)"/>
     <wire from="(90,160)" to="(110,160)"/>
     <wire from="(90,80)" to="(170,80)"/>
     <wire from="(90,120)" to="(170,120)"/>
     <wire from="(190,260)" to="(270,260)"/>
     <wire from="(170,370)" to="(500,370)"/>
     <wire from="(170,360)" to="(180,360)"/>
+    <wire from="(390,50)" to="(390,100)"/>
     <wire from="(240,90)" to="(310,90)"/>
     <wire from="(110,320)" to="(180,320)"/>
     <wire from="(250,100)" to="(250,160)"/>
-    <wire from="(360,100)" to="(430,100)"/>
-    <comp lib="1" loc="(200,160)" name="NOT Gate"/>
+    <comp lib="4" loc="(470,100)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(390,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="R"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="1" loc="(230,340)" name="AND Gate">
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(360,100)" name="AND Gate"/>
+    <comp lib="1" loc="(200,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(200,80)" name="NOT Gate"/>
+    <comp lib="0" loc="(90,80)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="T0"/>
+    </comp>
+    <comp lib="0" loc="(90,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="IEN"/>
+    </comp>
+    <comp lib="0" loc="(90,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="FGI"/>
+    </comp>
+    <comp lib="1" loc="(200,160)" name="NOT Gate"/>
+    <comp lib="1" loc="(190,260)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="T1"/>
     </comp>
     <comp lib="0" loc="(90,280)" name="Pin">
       <a name="tristate" val="false"/>
@@ -94,29 +125,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(90,160)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="T2"/>
-    </comp>
-    <comp lib="0" loc="(90,240)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="FGI"/>
-    </comp>
-    <comp lib="1" loc="(200,120)" name="NOT Gate"/>
-    <comp lib="0" loc="(90,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="T1"/>
-    </comp>
-    <comp lib="1" loc="(360,100)" name="AND Gate"/>
-    <comp lib="1" loc="(200,80)" name="NOT Gate"/>
-    <comp lib="0" loc="(90,200)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="IEN"/>
-    </comp>
-    <comp lib="4" loc="(470,100)" name="J-K Flip-Flop"/>
-    <comp lib="1" loc="(190,260)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(90,80)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="T0"/>
     </comp>
   </circuit>
 </project>
